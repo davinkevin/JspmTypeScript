@@ -4,8 +4,9 @@ System.config({
   transpiler: "typescript",
   packages: {
     'app': {
-      main: 'app.ts',
-      format: 'esm',
+      defaultExtension: 'ts'
+    },
+    './public/app': { // ??
       defaultExtension: 'ts'
     }
   },
