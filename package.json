@@ -16,7 +16,6 @@
     "karma-jasmine": "^0.3.6",
     "karma-jspm": "^2.0.2",
     "karma-phantomjs-launcher": "^0.2.1",
-    "karma-typescript-preprocessor": "0.0.21",
     "open": "0.0.5",
     "phantomjs": "^1.9.18",
     "typescript": "^1.6.2"
