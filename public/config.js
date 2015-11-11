@@ -1,9 +1,9 @@
 System.config({
-  baseURL: "./",
+  baseURL: "/",
   defaultJSExtensions: true,
   transpiler: "typescript",
   packages: {
-    'public': {
+    'app': {
       main: 'app.ts',
       format: 'esm',
       defaultExtension: 'ts'

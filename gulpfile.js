@@ -11,7 +11,7 @@ var open = require('open');
  Start an http-server for the example project
  */
 gulp.task('serve', function(cb) {
-    var server = hs.createServer({"root": "./"});
+    var server = hs.createServer({"root": "./public/"});
     server.listen(8080);
     open("http://127.0.0.1:8080");
     cb();

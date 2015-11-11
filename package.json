@@ -21,6 +21,9 @@
     "typescript": "^1.6.2"
   },
   "jspm": {
+    "directories": {
+      "baseURL": "public"
+    },
     "devDependencies": {
       "typescript": "npm:typescript@^1.6.2"
     }

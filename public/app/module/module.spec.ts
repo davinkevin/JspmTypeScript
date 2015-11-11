@@ -1,3 +1,5 @@
+/// <reference path="../../../typings/tsd.d.ts" />
+
 /**
  * Created by kevin on 11/11/2015 for JspmTypeScript
  */

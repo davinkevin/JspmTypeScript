@@ -2,14 +2,17 @@ module.exports = function (config) {
     config.set({
         frameworks: ['jspm', 'jasmine'],
 
+        basePath: 'public',
+
         jspm: {
             config: 'config.js',
             loadFiles: ['**/*.spec.ts'],
-            serveFiles: ['**/*.+(ts|html|css)']
+            serveFiles: ['**/*.+(ts|html|css)'],
+            stripExtension : true
         },
 
         proxies: {
-            '/public/': '/base/public/',
+            '/app/': '/base/app/',
             '/jspm_packages/': '/base/jspm_packages/'
         },
 
