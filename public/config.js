@@ -12,9 +12,6 @@ System.config({
   packages: {
     "app": {
       "defaultExtension": "ts"
-    },
-    "./public/app": {
-      "defaultExtension": "ts"
     }
   },
 

@@ -17,8 +17,15 @@ gulp.task('serve', function(cb) {
     cb();
 });
 
+gulp.task('serve-prod', ['build'], function(cb) {
+    var server = hs.createServer({"root": "./dist/"});
+    server.listen(8080);
+    open("http://127.0.0.1:8080");
+    cb();
+});
+
 gulp.task('build', function(cb) {
-    new jspm.Builder().bundle('./public/app/app.ts', './dist/build.js', {sourceMaps: true})
+    new jspm.Builder().buildStatic('./public/app/app.ts', './dist/build.js', {sourceMaps: true})
         .then(function(){ cb(); })
         .catch(function(ex) {return cb(new Error(ex));})
     ;
