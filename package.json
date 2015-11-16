@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "postinstall" : "jspm install",
+    "postinstall": "jspm install",
     "test": "karma start karma.conf.js"
   },
   "author": "",
@@ -19,7 +19,6 @@
     "karma-phantomjs-launcher": "^0.2.1",
     "open": "0.0.5",
     "phantomjs": "^1.9.18",
-    "systemjs-builder": "^0.14.10",
     "typescript": "^1.6.2"
   },
   "jspm": {
@@ -27,6 +26,8 @@
       "baseURL": "public"
     },
     "devDependencies": {
+      "clean-css": "npm:clean-css@^3.4.8",
+      "css": "github:systemjs/plugin-css@^0.1.19",
       "typescript": "npm:typescript@^1.6.2"
     }
   }
